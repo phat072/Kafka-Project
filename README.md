@@ -26,7 +26,7 @@ You can check the Medium article for this project in: [A Python Kafka Producer](
 
 ### Installation
 
-#### Option 1: Virtual Environment
+#### Step 1: Virtual Environment
 
 ```bash
 python3 -m venv venv
@@ -45,6 +45,8 @@ pip install -r requirements.txt
 ```bash
 docker compose up -d
 ```
+
+#### Step 2: Create Topics
 
 Now that we have a the Kafka *server* running, we need to tell it how to organize the incomming data. For this, the *server* organizes and store the incomming messages (events) in *topics*. *"Very simplified, a topic is similar to a folder in a filesystem, and the events are the files in that folder".* Let's tell the server where to put all this incomming data:
 
