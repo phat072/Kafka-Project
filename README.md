@@ -24,6 +24,7 @@ You can check the Medium article for this project in: [A Python Kafka Producer](
 ## Quickstart
 
 Create and active your virtual environment.
+
     - Run env 
         + python3 -m venv venv
         + source venv/bin/activate
