@@ -23,19 +23,24 @@ You can check the Medium article for this project in: [A Python Kafka Producer](
 
 ## Quickstart
 
-Create and active your virtual environment.
-    - Run env 
-        python3 -m venv venv
-        source venv/bin/activate
-    - Poetry option:
-        ```poetry install```
-        In ubuntu use sudo apt install python3-poetry
-    - Pip option:
-        I have created a `requirements.txt` from the `pyproject.toml` file. Due to this, you can install dependencies using pip.
-        ```pip install -r requirements.txt```
 
+### Installation
+
+#### Option 1: Virtual Environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
 The first thing you need to do is start a *Server* (a *Server* is a server which has Kafka running on it). For this, we are going to use a `docker-compose.yaml` file to set up the *Server* service.
 
+# Install Poetry (if not already installed)
+# In Ubuntu, use: sudo apt install python3-poetry
+
+# Install project dependencies
+poetry install
+
+# Install dependencies using pip
+pip install -r requirements.txt
 
 ```bash
 docker compose up -d
