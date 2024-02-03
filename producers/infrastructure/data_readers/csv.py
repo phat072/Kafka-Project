@@ -26,6 +26,6 @@ class Reader(IReader[Dict[str, Any]]):
             for measurement in chunk.itertuples(name="Measurement"):
                 time.sleep(1)  # simulates a sample rate of 1 second for a sensor
                 yield {
-                    "temperature": measurement.temperature,
-                    "timestamp": measurement.timestamp
+                    "free_text": measurement.free_text,
+                    "label_id": measurement.label_id
                 }
