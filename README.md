@@ -24,13 +24,13 @@ You can check the Medium article for this project in: [A Python Kafka Producer](
 ## Quickstart
 
 Create and active your virtual environment.
-    Run env 
+    - Run env 
         python3 -m venv venv
         source venv/bin/activate
-    Poetry option:
+    - Poetry option:
         ```poetry install```
         In ubuntu use sudo apt install python3-poetry
-    Pip option:
+    - Pip option:
         I have created a `requirements.txt` from the `pyproject.toml` file. Due to this, you can install dependencies using pip.
         ```pip install -r requirements.txt```
 
